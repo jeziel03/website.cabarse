@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dakingo – Online Bakery</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap" id="top">
+<header>
+  <a class="logo" href="#top">Dakingo</a>
+  <div class="hr">
+    <label class="search"><input id="q" placeholder="Search" aria-label="Search cakes"><span>🔍</span></label>
+    <button class="cart" id="cartBtn" aria-label="Cart">🛒<b id="cnt">0</b></button>
+    <a href="#" id="login"><span class="t">Login/Signup</span></a>
+  </div>
+</header>
+<nav id="nav">
+  <a href="#best" data-f="all">Cakes</a><a href="#best" data-f="Classic">Theme Cakes</a><a href="#best" data-f="Desserts">Desserts</a><a href="#best" data-f="Gourmet">Birthday</a><a href="#best" data-f="Cookies">Hampers</a><a href="#promise">Anniversary</a><a href="#promise">Occasions</a><a href="#promise">Occasions</a>
+  <a class="order" href="#best">ORDER NOW</a>
+</nav>
+
+<section class="hero">
+  <div class="ring" id="heroCake"></div>
+  <div class="htxt">
+    <h1>DECADENT<br>CHOCOLATE<br>BLISS!</h1>
+    <p>Satisfy Your Sweet Cravings</p>
+    <button class="save" id="saveBtn"><small>Special Offer!</small>SAVE 20%</button>
+  </div>
+  <div class="mini m1" id="m1"></div><div class="mini m2" id="m2"></div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="mhead">
+    <div><h2>Menu</h2><div class="sub">What will you wish for?</div>
+      <div class="dots"><i>🎂</i><i>🎁</i><i>📜</i></div></div>
+    <div class="cats" id="cats">
+      <button class="cat" data-f="Classic"><span>🎂</span>CLASSIC</button>
+      <button class="cat" data-f="Gourmet"><span>🍰</span>GOURMET</button>
+      <button class="cat" data-f="Desserts"><span>🧁</span>DESSERTS</button>
+      <button class="cat" data-f="Cookies"><span>🍪</span>COOKIES</button>
+    </div>
+  </div>
+  <h3 id="best">Bestsellers from Across the Country</h3>
+  <div class="grid" id="grid"></div>
+  <button class="view" id="viewAll">VIEW ALL</button>
+</section>
+
+<section class="promise" id="promise">
+  <h2 style="margin-top:26px">Our Promise</h2>
+  <div class="sub" style="margin-bottom:6px">There’s no secret spell – only honest work!</div>
+  <div class="pgrid">
+    <div>
+      <div class="panel"><p>A glimpse into our world</p>
+        <div class="stats"><div><span>⏱</span>ON-TIME<br>DELIVERY</div><div><span>🚚</span>500+<br>DESIGNS</div><div><span>2</span>2 CR+<br>ORDERS</div><div><span>🧁</span>BAKED<br>FRESH</div></div></div>
+      <div class="panel"><div class="ticket"><div class="ic">🎟️</div><div><h5>THE MAGICAL TICKET</h5><p>Add 3 reminders in your account. Win offers worth Rs. 750</p><button class="unlock" id="unlock">UNLOCK NOW</button></div></div></div>
+      <div class="panel social"><span class="avs"><span>👩</span><span>👨</span><span>👩</span><span>👨</span><span>👩</span></span><a href="#" id="follow">Follow us on social!</a></div>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<div class="banner">Dakingo – Your Trusted FSSAI Certified Online Bakery for Every Celebration</div>
+
+<footer>
+  <div><div class="logo">Dakingo</div><a href="#">Our Story</a><a href="#">Contact Us</a><a href="#">Locations</a><a href="#">Media</a><a href="#">Careers</a></div>
+  <div><h6>KNOW US</h6><a href="#">Contact Us</a><a href="#">Blog</a></div>
+  <div><h6>NEED HELP</h6><a href="#">Cancellation And Refund</a><a href="#">Privacy Policy</a></div>
+  <div><h6>MORE INFO</h6><a href="#">Terms And Policy</a><a href="#">Custom Orders</a></div>
+  <div><h6>MORE INFO</h6><a href="#">Coupons &amp; Offers</a><a href="#">Download App</a></div>
+  <div class="sub-row"><input id="mail" type="email" placeholder="Enter Email Address" aria-label="Email"><button id="subBtn">SUBSCRIBE</button>
+    <button class="help" id="help">⌄<br>Hey, need any help?</button></div>
+</footer>
+</div>
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
